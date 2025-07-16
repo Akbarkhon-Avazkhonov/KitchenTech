@@ -1,5 +1,7 @@
-// pages/amazon.tsx
-export default function AmazonRedirect() {
+// pages/sliv.tsx
+import { GetServerSideProps } from 'next'
+
+export const getServerSideProps: GetServerSideProps = async () => {
   const urls = [
     "https://www.amazon.com/dp/B0CSZ7WBYW?tag=" + process.env.NEXT_PUBLIC_AMAZON_TAG,
     "https://www.amazon.com/dp/B0DQLVCQPZ?tag=" + process.env.NEXT_PUBLIC_AMAZON_TAG,
@@ -10,15 +12,14 @@ export default function AmazonRedirect() {
   ]
   const selected = urls[Math.floor(Math.random() * urls.length)]
 
-  return (
-    <html>
-      <head>
-        <meta httpEquiv="refresh" content={`0;url=${selected}`} />
-      </head>
-      <body>
-        <a href={selected} rel="noreferrer nofollow" id="redirect">Redirecting...</a>
-        <script dangerouslySetInnerHTML={{ __html: `document.getElementById("redirect").click();` }} />
-      </body>
-    </html>
-  )
+  return {
+    redirect: {
+      destination: selected,
+      permanent: false,
+    },
+  }
+}
+
+export default function SlivRedirect() {
+  return null
 }

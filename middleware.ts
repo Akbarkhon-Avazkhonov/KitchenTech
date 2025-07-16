@@ -1,3 +1,4 @@
+// middleware.ts
 import { NextRequest, NextResponse } from 'next/server'
 
 const externalLinks = [
@@ -7,25 +8,12 @@ const externalLinks = [
   "https://www.amazon.com/dp/B0DJFBF3SH?tag=" + process.env.NEXT_PUBLIC_AMAZON_TAG,
   "https://www.amazon.com/dp/B00004SGFW?tag=" + process.env.NEXT_PUBLIC_AMAZON_TAG,
   "https://www.amazon.com/dp/B00NGV4E1G?tag=" + process.env.NEXT_PUBLIC_AMAZON_TAG,
-  
 ]
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone()
   const cookieName = 'kitchen_tech'
 
-  // Если зашли на /redirect
-  if (url.pathname === '/amazon') {
-    const response = NextResponse.redirect(new URL('/', request.url))
-    response.cookies.set(cookieName, '1', {
-      path: '/',
-      maxAge: 60,
-      httpOnly: true,
-    })
-    return response
-  }
-
-  // Если зашли на / и есть кука
   if (url.pathname === '/') {
     const redirectFlag = request.cookies.get(cookieName)
 
@@ -44,10 +32,20 @@ export function middleware(request: NextRequest) {
     }
   }
 
+  // Ставим куку при заходе на /amazon и /sliv (чтобы был единый флоу)
+  if (url.pathname === '/amazon' || url.pathname === '/sliv') {
+    const response = NextResponse.next()
+    response.cookies.set(cookieName, '1', {
+      path: '/',
+      maxAge: 60,
+      httpOnly: true,
+    })
+    return response
+  }
+
   return NextResponse.next()
 }
 
-// применяем middleware только к / и /redirect
 export const config = {
-  matcher: ['/', '/amazon'],
+  matcher: ['/', '/amazon', '/sliv'],
 }
