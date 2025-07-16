@@ -54,7 +54,7 @@ export default function KitchenTechLanding() {
           </div>
           <div className="mt-12">
             <Image
-              src="/placeholder.svg?height=400&width=800"
+              src="https://www.cadpro.com/wp-content/uploads/2019/11/High-Tech-Smart-Kitchens.png"
               alt="Kitchen Appliances"
               width={800}
               height={400}
@@ -111,7 +111,7 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://cdn.thewirecutter.com/wp-content/media/2023/07/blender-2048px-0414-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
                   alt="Blenders and Mixers"
                   width={300}
                   height={200}
@@ -130,7 +130,7 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://i.ytimg.com/vi/2zOQ3iH0Zb0/maxresdefault.jpg"
                   alt="Coffee Machines"
                   width={300}
                   height={200}
@@ -149,7 +149,7 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://djd1xqjx2kdnv.cloudfront.net/photos/36/44/485933_3328_XXL.jpg"
                   alt="Multi-cookers"
                   width={300}
                   height={200}
@@ -168,7 +168,7 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSBEBAAl90yQyHMqjEg6WQwFDSmDzIa1nGA&s"
                   alt="Toasters and Grills"
                   width={300}
                   height={200}
@@ -187,7 +187,7 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://hips.hearstapps.com/hmg-prod/images/best-food-processors-good-housekeeping-1631524146.png"
                   alt="Food Processors"
                   width={300}
                   height={200}
@@ -206,7 +206,7 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="https://cdn.thewirecutter.com/wp-content/media/2024/08/microwaves-2048px-2-14-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
                   alt="Microwaves"
                   width={300}
                   height={200}
@@ -236,31 +236,27 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=250&width=300"
+                  src="https://m.media-amazon.com/images/I/71QwoGmcfUL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
                   alt="Vitamix Professional"
                   width={300}
                   height={250}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="w-full h-48 object-contain rounded-t-lg"
                 />
-                <Badge className="absolute top-4 left-4 bg-red-500">Best Seller</Badge>
               </CardHeader>
               <CardContent>
-                <CardTitle className="mb-2">Vitamix Professional Series 750</CardTitle>
+                <CardTitle className="mb-2">Ninja Air Fryer Pro 4-in-1</CardTitle>
                 <div className="flex items-center mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
-                  <span className="ml-2 text-sm text-gray-600">(1,247 reviews)</span>
                 </div>
                 <CardDescription className="mb-4">
-                  Professional blender with 2.2 HP motor. Perfect for smoothies, soups, and nut butters.
+                  AIR CRISP TECHNOLOGY: 400℉ superheated air surrounds food for hot, crispy results with little to no oil.
                 </CardDescription>
                 <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-2xl font-bold text-green-600">$449.95</span>
-                    <span className="text-sm text-gray-500 line-through ml-2">$579.95</span>
-                  </div>
+           
                   <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  {/* https://www.amazon.com/Ninja-Capacity-Dehydrate-Technology-AF141/dp/B0CSZ7WBYW */}
                 </div>
               </CardContent>
             </Card>
@@ -268,31 +264,26 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=250&width=300"
+                  src="https://m.media-amazon.com/images/I/41u+hTiHdeL._SX342_SY445_.jpg"
                   alt="Breville Barista Express"
                   width={300}
                   height={250}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="w-full h-48 object-contain rounded-t-lg"
                 />
-                <Badge className="absolute top-4 left-4 bg-blue-500">Editor's Choice</Badge>
               </CardHeader>
               <CardContent>
-                <CardTitle className="mb-2">Breville Barista Express</CardTitle>
+                <CardTitle className="mb-2">Iceman Slush-Ease Slushie Machine</CardTitle>
                 <div className="flex items-center mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
-                  <span className="ml-2 text-sm text-gray-600">(2,891 reviews)</span>
                 </div>
                 <CardDescription className="mb-4">
-                  Espresso machine with built-in grinder. Professional quality for home use.
-                </CardDescription>
+FREEZES WITHOUT ICE: Make slushies out of any beverage you can think of right at home on your countertop: no ice required                </CardDescription>
                 <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-2xl font-bold text-green-600">$699.95</span>
-                    <span className="text-sm text-gray-500 line-through ml-2">$799.95</span>
-                  </div>
+        
                   <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  {/* https://www.amazon.com/Iceman-Slush-Ease-Easy-Dispensing-Margaritas-Slushies/dp/B0DQLVCQPZ */}
                 </div>
               </CardContent>
             </Card>
@@ -300,16 +291,95 @@ export default function KitchenTechLanding() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=250&width=300"
+                  src="https://m.media-amazon.com/images/I/81uek418PFL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
                   alt="Instant Pot Duo"
                   width={300}
                   height={250}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="w-full h-48 object-contain rounded-t-lg"
                 />
-                <Badge className="absolute top-4 left-4 bg-green-500">New</Badge>
               </CardHeader>
               <CardContent>
-                <CardTitle className="mb-2">Instant Pot Duo 7-in-1</CardTitle>
+                <CardTitle className="mb-2">Ninja DCT451 12-in-1 </CardTitle>
+                <div className="flex items-center mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <CardDescription className="mb-4">
+Creates two separate ovens. Access just the top for quick meals and snacks                </CardDescription>
+                <div className="flex items-center justify-between">
+      
+                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  {/* https://www.amazon.com/Ninja-DCT451-Thermometer-FlavorSeal-Convection/dp/B0BRL9F8HV */}
+                </div>
+              </CardContent>
+            </Card>
+             <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Image
+                  src="https://m.media-amazon.com/images/I/71xyn9-4cAL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+                  alt="Vitamix Professional"
+                  width={300}
+                  height={250}
+                  className="w-full h-48 object-contain rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">Ninja Pod & Grounds Specialty Single-Serve Coffee Maker</CardTitle>
+                <div className="flex items-center mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <CardDescription className="mb-4">
+4 BREW STYLES: Select Classic, Rich, Over Ice, or Specialty for your grounds or coffee pods.                </CardDescription>
+                <div className="flex items-center justify-between">
+           
+                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  {/* https://www.amazon.com/Ninja-Specialty-Single-Serve-Compatible-PB051ST/dp/B0DJFBF3SH */}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Image
+                  src="https://m.media-amazon.com/images/I/51jpWoprCvL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+                  alt="Breville Barista Express"
+                  width={300}
+                  height={250}
+                  className="w-full h-48 object-contain rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">KitchenAid Classic Series 4.5</CardTitle>
+                <div className="flex items-center mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <CardDescription className="mb-4">
+Built to take it all on with the durable and built-to-last metal construction, and 59 touchpoints around the mixer bowl for great mixing results.</CardDescription>
+                <div className="flex items-center justify-between">
+        
+                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  {/*https://www.amazon.com/KitchenAid-Classic-Quart-Tilt-Head-K45SSWH/dp/B00004SGFW */}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Image
+                  src="https://m.media-amazon.com/images/I/811OMvURKKL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+                  alt="Instant Pot Duo"
+                  width={300}
+                  height={250}
+                  className="w-full h-48 object-contain rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">Ninja DCT451 12-in-1 </CardTitle>
                 <div className="flex items-center mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -317,14 +387,11 @@ export default function KitchenTechLanding() {
                   <span className="ml-2 text-sm text-gray-600">(89,432 reviews)</span>
                 </div>
                 <CardDescription className="mb-4">
-                  7-in-1 multi-cooker: pressure cooker, slow cooker, rice cooker, steamer, and more.
-                </CardDescription>
+PROFESSIONAL POWER: 1200-watt motor powers through the toughest ingredients and pulverizes ice to snow in seconds for creamy frozen drinks, smoothies, sauces, and more.</CardDescription>
                 <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-2xl font-bold text-green-600">$79.95</span>
-                    <span className="text-sm text-gray-500 line-through ml-2">$99.95</span>
-                  </div>
+      
                   <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  {/*https://www.amazon.com/Ninja-Personal-Countertop-1200-Watt-BL642/dp/B00NGV4E1G*/}
                 </div>
               </CardContent>
             </Card>
@@ -462,7 +529,7 @@ export default function KitchenTechLanding() {
             </div>
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="https://justkitchendoors.co.uk/wp-content/uploads/2021/05/Smart-Kitchen-scaled.jpeg"
                 alt="Modern kitchen with appliances"
                 width={500}
                 height={400}
