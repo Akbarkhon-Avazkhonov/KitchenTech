@@ -254,9 +254,9 @@ export default function KitchenTechLanding() {
                   AIR CRISP TECHNOLOGY: 400℉ superheated air surrounds food for hot, crispy results with little to no oil.
                 </CardDescription>
                 <div className="flex items-center justify-between">
-           
-                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
-                  {/* https://www.amazon.com/Ninja-Capacity-Dehydrate-Technology-AF141/dp/B0CSZ7WBYW */}
+                  <a href={`https://www.amazon.com/dp/B0CSZ7WBYW?tag=${process.env.NEXT_PUBLIC_AMAZON_TAG}`} >
+                    <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -281,9 +281,9 @@ export default function KitchenTechLanding() {
                 <CardDescription className="mb-4">
 FREEZES WITHOUT ICE: Make slushies out of any beverage you can think of right at home on your countertop: no ice required                </CardDescription>
                 <div className="flex items-center justify-between">
-        
-                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
-                  {/* https://www.amazon.com/Iceman-Slush-Ease-Easy-Dispensing-Margaritas-Slushies/dp/B0DQLVCQPZ */}
+                  <a href={`https://www.amazon.com/dp/B0DQLVCQPZ?tag=${process.env.NEXT_PUBLIC_AMAZON_TAG}`} >
+                    <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -308,9 +308,10 @@ FREEZES WITHOUT ICE: Make slushies out of any beverage you can think of right at
                 <CardDescription className="mb-4">
 Creates two separate ovens. Access just the top for quick meals and snacks                </CardDescription>
                 <div className="flex items-center justify-between">
-      
-                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
-                  {/* https://www.amazon.com/Ninja-DCT451-Thermometer-FlavorSeal-Convection/dp/B0BRL9F8HV */}
+                  
+<a href={`https://www.amazon.com/dp/B0BRL9F8HV?tag=${process.env.NEXT_PUBLIC_AMAZON_TAG}`} >
+                    <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  </a>                  {/* https://www.amazon.com/Ninja-DCT451-Thermometer-FlavorSeal-Convection/dp/B0BRL9F8HV */}
                 </div>
               </CardContent>
             </Card>
@@ -335,8 +336,9 @@ Creates two separate ovens. Access just the top for quick meals and snacks      
 4 BREW STYLES: Select Classic, Rich, Over Ice, or Specialty for your grounds or coffee pods.                </CardDescription>
                 <div className="flex items-center justify-between">
            
-                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
-                  {/* https://www.amazon.com/Ninja-Specialty-Single-Serve-Compatible-PB051ST/dp/B0DJFBF3SH */}
+<a href={`https://www.amazon.com/dp/B0DJFBF3SH?tag=${process.env.NEXT_PUBLIC_AMAZON_TAG}`} >
+                    <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  </a>                  {/* https://www.amazon.com/Ninja-Specialty-Single-Serve-Compatible-PB051ST/dp/B0DJFBF3SH */}
                 </div>
               </CardContent>
             </Card>
@@ -362,7 +364,10 @@ Creates two separate ovens. Access just the top for quick meals and snacks      
 Built to take it all on with the durable and built-to-last metal construction, and 59 touchpoints around the mixer bowl for great mixing results.</CardDescription>
                 <div className="flex items-center justify-between">
         
-                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  {/* button with link */}
+                  <a href={`https://www.amazon.com/dp/B00004SGFW?tag=${process.env.NEXT_PUBLIC_AMAZON_TAG}`} >
+                    <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  </a>
                   {/*https://www.amazon.com/KitchenAid-Classic-Quart-Tilt-Head-K45SSWH/dp/B00004SGFW */}
                 </div>
               </CardContent>
@@ -389,8 +394,12 @@ Built to take it all on with the durable and built-to-last metal construction, a
                 <CardDescription className="mb-4">
 PROFESSIONAL POWER: 1200-watt motor powers through the toughest ingredients and pulverizes ice to snow in seconds for creamy frozen drinks, smoothies, sauces, and more.</CardDescription>
                 <div className="flex items-center justify-between">
-      
-                  <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+
+{/* button with link */}
+                  <a href={`https://www.amazon.com/dp/B00NGV4E1G?tag=${process.env.NEXT_PUBLIC_AMAZON_TAG}`} >
+                    <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button>
+                  </a>
+                  {/* <Button className="bg-orange-500 hover:bg-orange-600">Buy on Amazon</Button> */}
                   {/*https://www.amazon.com/Ninja-Personal-Countertop-1200-Watt-BL642/dp/B00NGV4E1G*/}
                 </div>
               </CardContent>
