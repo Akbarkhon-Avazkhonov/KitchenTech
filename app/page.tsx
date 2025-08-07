@@ -19,16 +19,20 @@ export default function KitchenTechLanding() {
             <span className="text-2xl font-bold text-gray-900">KitchenTech</span>
           </div>
           <nav className="hidden md:flex space-x-6">
-            <Link href="#products" className="text-gray-600 hover:text-orange-500">
-              Products
+            <Link href="/" className="text-gray-600 font-semibold">
+              Home
             </Link>
-            <Link href="#reviews" className="text-gray-600 hover:text-orange-500">
-              Reviews
-            </Link>
-            <Link href="#about" className="text-gray-600 hover:text-orange-500">
+
+            <Link href="/about" className="text-gray-600 hover:text-orange-500">
               About
             </Link>
-            <Link href="#faq" className="text-gray-600 hover:text-orange-500">
+            <Link href="/contact" className="text-gray-600 hover:text-orange-500">
+              Contact
+            </Link>
+            <Link href="/privacy" className="text-gray-600 hover:text-orange-500">
+              Privacy Policy
+            </Link>
+            <Link href="/faq" className="text-gray-600 hover:text-orange-500">
               FAQ
             </Link>
           </nav>
@@ -44,14 +48,7 @@ export default function KitchenTechLanding() {
             Discover premium electric kitchen appliances. Professional reviews, honest ratings, and the best prices on
             Amazon.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-lg px-8 py-3">
-              Browse Catalog
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 bg-transparent">
-              Read Reviews
-            </Button>
-          </div>
+  
           <div className="mt-12">
             <Image
               src="https://www.cadpro.com/wp-content/uploads/2019/11/High-Tech-Smart-Kitchens.png"
@@ -649,7 +646,7 @@ PROFESSIONAL POWER: 1200-watt motor powers through the toughest ingredients and 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <ChefHat className="h-8 w-8 text-orange-500" />
@@ -659,51 +656,27 @@ PROFESSIONAL POWER: 1200-watt motor powers through the toughest ingredients and 
                 Your trusted guide in the world of kitchen appliances. Honest reviews and the best deals.
               </p>
             </div>
-            <div>
-              <h3 className="font-semibold mb-4">Categories</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-white">
-                    Blenders
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white">
-                    Coffee Machines
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white">
-                    Multi-cookers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white">
-                    Toasters
-                  </Link>
-                </li>
-              </ul>
-            </div>
+       
             <div>
               <h3 className="font-semibold mb-4">Information</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-white">
+                  <Link href="/about" className="hover:text-white">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white">
+                  <Link href="/contact" className="hover:text-white">
                     Contact
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white">
+                  <Link href="/privacy" className="hover:text-white">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white">
+                  <Link href="/terms" className="hover:text-white">
                     Terms of Service
                   </Link>
                 </li>
