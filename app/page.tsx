@@ -97,131 +97,6 @@ export default function KitchenTechLanding() {
         </div>
       </section>
 
-      {/* Categories Section */}
-      <section id="products" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Product Categories</h2>
-            <p className="text-xl text-gray-600">Choose the right kitchen appliance category for you</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-              <CardHeader>
-                <Image
-                  src="https://cdn.thewirecutter.com/wp-content/media/2023/07/blender-2048px-0414-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
-                  alt="Blenders and Mixers"
-                  width={300}
-                  height={200}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-              </CardHeader>
-              <CardContent>
-                <CardTitle className="mb-2">Blenders & Mixers</CardTitle>
-                <CardDescription className="mb-4">
-                  Powerful blenders for smoothies, soups, and cocktails. Professional mixers for baking.
-                </CardDescription>
-                <Badge variant="secondary">15+ products</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-              <CardHeader>
-                <Image
-                  src="https://i.ytimg.com/vi/2zOQ3iH0Zb0/maxresdefault.jpg"
-                  alt="Coffee Machines"
-                  width={300}
-                  height={200}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-              </CardHeader>
-              <CardContent>
-                <CardTitle className="mb-2">Coffee Machines</CardTitle>
-                <CardDescription className="mb-4">
-                  Espresso machines, drip coffee makers, French presses, and premium coffee grinders.
-                </CardDescription>
-                <Badge variant="secondary">25+ products</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-              <CardHeader>
-                <Image
-                  src="https://djd1xqjx2kdnv.cloudfront.net/photos/36/44/485933_3328_XXL.jpg"
-                  alt="Multi-cookers"
-                  width={300}
-                  height={200}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-              </CardHeader>
-              <CardContent>
-                <CardTitle className="mb-2">Multi-cookers & Pressure Cookers</CardTitle>
-                <CardDescription className="mb-4">
-                  Smart multi-cookers, Instant Pot pressure cookers, and slow cookers for healthy cooking.
-                </CardDescription>
-                <Badge variant="secondary">20+ products</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-              <CardHeader>
-                <Image
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSBEBAAl90yQyHMqjEg6WQwFDSmDzIa1nGA&s"
-                  alt="Toasters and Grills"
-                  width={300}
-                  height={200}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-              </CardHeader>
-              <CardContent>
-                <CardTitle className="mb-2">Toasters & Grills</CardTitle>
-                <CardDescription className="mb-4">
-                  Modern toasters, contact grills, and sandwich makers for quick breakfasts.
-                </CardDescription>
-                <Badge variant="secondary">12+ products</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-              <CardHeader>
-                <Image
-                  src="https://hips.hearstapps.com/hmg-prod/images/best-food-processors-good-housekeeping-1631524146.png"
-                  alt="Food Processors"
-                  width={300}
-                  height={200}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-              </CardHeader>
-              <CardContent>
-                <CardTitle className="mb-2">Food Processors</CardTitle>
-                <CardDescription className="mb-4">
-                  Multi-functional processors for chopping, grinding, and dough preparation.
-                </CardDescription>
-                <Badge variant="secondary">18+ products</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-              <CardHeader>
-                <Image
-                  src="https://cdn.thewirecutter.com/wp-content/media/2024/08/microwaves-2048px-2-14-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
-                  alt="Microwaves"
-                  width={300}
-                  height={200}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-              </CardHeader>
-              <CardContent>
-                <CardTitle className="mb-2">Microwave Ovens</CardTitle>
-                <CardDescription className="mb-4">
-                  Modern microwaves with convection, grill, and smart cooking functions.
-                </CardDescription>
-                <Badge variant="secondary">10+ products</Badge>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Products */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -405,6 +280,132 @@ PROFESSIONAL POWER: 1200-watt motor powers through the toughest ingredients and 
         </div>
       </section>
 
+      {/* Categories Section */}
+      <section id="products" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Product Categories</h2>
+            <p className="text-xl text-gray-600">Choose the right kitchen appliance category for you</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <Image
+                  src="https://cdn.thewirecutter.com/wp-content/media/2023/07/blender-2048px-0414-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
+                  alt="Blenders and Mixers"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">Blenders & Mixers</CardTitle>
+                <CardDescription className="mb-4">
+                  Powerful blenders for smoothies, soups, and cocktails. Professional mixers for baking.
+                </CardDescription>
+                <Badge variant="secondary">15+ products</Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <Image
+                  src="https://i.ytimg.com/vi/2zOQ3iH0Zb0/maxresdefault.jpg"
+                  alt="Coffee Machines"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">Coffee Machines</CardTitle>
+                <CardDescription className="mb-4">
+                  Espresso machines, drip coffee makers, French presses, and premium coffee grinders.
+                </CardDescription>
+                <Badge variant="secondary">25+ products</Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <Image
+                  src="https://djd1xqjx2kdnv.cloudfront.net/photos/36/44/485933_3328_XXL.jpg"
+                  alt="Multi-cookers"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">Multi-cookers & Pressure Cookers</CardTitle>
+                <CardDescription className="mb-4">
+                  Smart multi-cookers, Instant Pot pressure cookers, and slow cookers for healthy cooking.
+                </CardDescription>
+                <Badge variant="secondary">20+ products</Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <Image
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSBEBAAl90yQyHMqjEg6WQwFDSmDzIa1nGA&s"
+                  alt="Toasters and Grills"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">Toasters & Grills</CardTitle>
+                <CardDescription className="mb-4">
+                  Modern toasters, contact grills, and sandwich makers for quick breakfasts.
+                </CardDescription>
+                <Badge variant="secondary">12+ products</Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <Image
+                  src="https://hips.hearstapps.com/hmg-prod/images/best-food-processors-good-housekeeping-1631524146.png"
+                  alt="Food Processors"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">Food Processors</CardTitle>
+                <CardDescription className="mb-4">
+                  Multi-functional processors for chopping, grinding, and dough preparation.
+                </CardDescription>
+                <Badge variant="secondary">18+ products</Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <Image
+                  src="https://cdn.thewirecutter.com/wp-content/media/2024/08/microwaves-2048px-2-14-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
+                  alt="Microwaves"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2">Microwave Ovens</CardTitle>
+                <CardDescription className="mb-4">
+                  Modern microwaves with convection, grill, and smart cooking functions.
+                </CardDescription>
+                <Badge variant="secondary">10+ products</Badge>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      
       {/* Reviews Section */}
       <section id="reviews" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
